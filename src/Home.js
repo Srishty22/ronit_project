@@ -1,9 +1,9 @@
 import 'antd/dist/antd.css';
 import './Home.css';
 import React from 'react';
-import { Button, Checkbox, Form, Input, Col, Row, Image } from 'antd';
+import { Button, Image } from 'antd';
 import { Breadcrumb, Layout, Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined, HomeOutlined } from '@ant-design/icons';
+import { SettingOutlined, HomeOutlined, LogoutOutlined, BellOutlined, ContactsOutlined, MessageOutlined, BorderInnerOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 const items = [
@@ -23,7 +23,7 @@ const Home = () => (
         
       <Header>
       
-        <div className="logo"/>
+        <div className="logo"></div>
 
         <Menu
           theme="dark"
@@ -31,14 +31,20 @@ const Home = () => (
           //items={items}
           defaultSelectedKeys={['home']}
         >
+        <Menu.Item key="logo">
+        <Image
+        width={60}
+        src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+      />
+        </Menu.Item>
         <Menu.Item key="home" icon={<HomeOutlined />}>Home</Menu.Item>
-        <Menu.Item key="about" icon={<MailOutlined />}>About</Menu.Item>
-        <Menu.Item key="analytics" icon={<MailOutlined />}>Analytics</Menu.Item>
-        <Menu.Item key="contact" icon={<MailOutlined />}>Contact</Menu.Item>
+        <Menu.Item key="about" icon={<BorderInnerOutlined />}>About</Menu.Item>
+        <Menu.Item key="analytics" icon={<ContactsOutlined />}>Analytics</Menu.Item>
+        <Menu.Item key="contact" icon={<MessageOutlined />}>Contact</Menu.Item>
         <Menu.SubMenu title="My Profile">
         <Menu.Item key="settings" icon={<SettingOutlined />}>Settings</Menu.Item>
-        <Menu.Item key="notifications" icon={<MailOutlined />}>Notifications</Menu.Item>
-        <Menu.Item key="logout" icon={<MailOutlined />}>Log Out</Menu.Item>
+        <Menu.Item key="notifications" icon={<BellOutlined />}>Notifications</Menu.Item>
+        <Menu.Item key="logout" icon={<LogoutOutlined />}>Log Out</Menu.Item>
         </Menu.SubMenu>
         
      </Menu>
@@ -57,6 +63,7 @@ const Home = () => (
             </p>
         </div>
       </Content>
+
       <Footer
         style={{
           textAlign: 'center',
@@ -64,6 +71,7 @@ const Home = () => (
       >
         UserNet ©2022 Created by Ronit Banga
       </Footer>
+
     </Layout>
   );
 

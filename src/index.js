@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Login from './Login';
 import Home from './Home';
+import About from './About';
+import Analytics from './Analytics';
+import Contact from './Contact';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +13,9 @@ root.render(
   <React.StrictMode>
     <Login />
     <Home />
+    <About />
+    <Analytics />
+    <Contact />
   </React.StrictMode>
 );
 
