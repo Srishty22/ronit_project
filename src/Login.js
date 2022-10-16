@@ -1,9 +1,14 @@
 import 'antd/dist/antd.css';
 import './Login.css';
+import './App';
 import React from 'react';
 import { Button, Checkbox, Form, Input, Col, Row, Image } from 'antd';
+import {Route, useRoutes} from 'react-router-dom';
 
 const Login = () => {
+
+    let connection=(Route);
+
     const onFinish = (values) => {
         console.log('Success:', values);
     };
@@ -66,7 +71,9 @@ const Login = () => {
 
                     <Form.Item wrapperCol={{ offset: 4, span: 20 }}
                     >
-                        <Button type="primary" htmlType="submit">
+                        <Button type="primary" htmlType="submit" onClick={()=>{
+                            connection.push("home");
+                            }}>
                             Submit
                         </Button>
                     </Form.Item>

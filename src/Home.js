@@ -3,6 +3,7 @@ import './Home.css';
 import React from 'react';
 import { Button, Image } from 'antd';
 import { Breadcrumb, Layout, Menu } from 'antd';
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import { SettingOutlined, HomeOutlined, LogoutOutlined, BellOutlined, ContactsOutlined, MessageOutlined, BorderInnerOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
@@ -18,6 +19,7 @@ const items = [
     },
 ];
 
+
 const Home = () => (
     <Layout className="layout">
 
@@ -26,15 +28,14 @@ const Home = () => (
                 theme="dark"
                 mode="horizontal"
                 //items={items}
-                defaultSelectedKeys={['home']}
-            >
-                <Menu.Item key="logo">
+                defaultSelectedKeys={['home']} >
+                <Menu.Item key="logo" onClick="Home">
                     <Image
                         width={60}
                         src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
                     />
                 </Menu.Item>
-                <Menu.Item key="home" icon={<HomeOutlined />}>Home</Menu.Item>
+                <Menu.Item key="home" icon={<HomeOutlined />}  >Home</Menu.Item>
                 <Menu.Item key="about" icon={<BorderInnerOutlined />}>About</Menu.Item>
                 <Menu.Item key="analytics" icon={<ContactsOutlined />}>Analytics</Menu.Item>
                 <Menu.Item key="contact" icon={<MessageOutlined />}>Contact</Menu.Item>
@@ -68,6 +69,7 @@ const Home = () => (
         </Footer>
 
     </Layout>
+
 );
 
 export default Home;
