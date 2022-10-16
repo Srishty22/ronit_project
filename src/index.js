@@ -6,7 +6,9 @@ import Home from './Home';
 import About from './About';
 import Analytics from './Analytics';
 import Contact from './Contact';
+import AddUsers from './AddUsers';
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +17,9 @@ root.render(
     <Home />
     <About />
     <Analytics />
+    <AddUsers/>
     <Contact />
+   
   </React.StrictMode>
 );
 
