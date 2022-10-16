@@ -11,11 +11,10 @@ const Login = () => {
         console.log('Failed:', errorInfo);
     };
 
-    return (
-  
+    return ( 
   <Row>
-  <Col span={4}></Col>
-     <Col span={8} className="LoginForm">   
+  <Col span={2}></Col>
+     <Col span={10} className="LoginForm">   
             <h2  className="Heading" >
                     Sign-in to Continue!
              </h2>
@@ -76,14 +75,12 @@ const Login = () => {
                            
      </Col>
 
-     <Col span={8} className="Image">
+     <Col span={10} className="Image">
        <Image
-        
          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
        />
-
      </Col>
-     <Col span={4}></Col>
+     <Col span={2}></Col>
   </Row>
 
         
