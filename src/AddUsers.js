@@ -1,13 +1,10 @@
 import 'antd/dist/antd.css';
 import './AddUsers.css';
 import React from 'react';
-import { Image, Row, Col, Layout, Menu, Form, Input, Button, Select, Typography, Breadcrumb, PageHeader } from 'antd';
-import { SettingOutlined, HomeOutlined, LogoutOutlined, BellOutlined, InstagramOutlined, YoutubeOutlined, FacebookOutlined, ContactsOutlined, MessageOutlined, BorderInnerOutlined } from '@ant-design/icons';
-import BreadcrumbItem from 'antd/lib/breadcrumb/BreadcrumbItem';
+import { Image, Row, Col, Layout, Menu, Form, Input, Button, Select, PageHeader } from 'antd';
+import { SettingOutlined, HomeOutlined, LogoutOutlined, BellOutlined, ContactsOutlined, MessageOutlined, BorderInnerOutlined } from '@ant-design/icons';
 
-const { TextArea } = Input;
 const { Header, Content, Footer } = Layout;
-const { Title, Text } = Typography;
 
 
 const AddUsers = () => (
